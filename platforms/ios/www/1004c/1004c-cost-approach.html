@@ -1,0 +1,604 @@
+<div class="content-block">
+  <div class="list-block">
+    <div class="content-block-title">
+      <b>COST APPROACH</b>
+    </div>
+    <ul>
+      <li>
+        <div class="item-content">
+          <div class="item-inner">
+            <div>
+              Provide adequate information for the lender/client to replicate the below cost figures and calculations.
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item-content">
+          <div class="item-inner">
+			<div style="width:100%">
+				<div>
+				  Support for the opinion of site value (summary of comparable land sales or other methods for estimating site value)
+				</div>
+				<div>
+					<textarea id="cost-approach-support" class="text-filled" data-bind="value: caSupportText" placeholder="Support Methods"> </textarea>
+				</div>
+			</div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item-content">
+          <div class="item-inner">
+            <div style="width:49%">
+              <div>Estimated</div>
+              <div id="estimated-radio-group" class="inputCheck">
+                <div style="display:inline-block">
+                  <label class="label-checkbox item-content" >
+                    <input id="reproduction" type="radio" name="estimated-radio" class="radio" data-bind="value:caEstimatedChecked" value="Yes"/>
+                    <div class="item-media">
+                      <i class="icon icon-form-checkbox"></i>
+                    </div>
+                    <div class="item-inner" style="border-bottom:none">
+                      <div class="item-title">REPRODUCTION</div>
+                    </div>
+                  </label>
+                </div>
+                <div style="display:inline-block">
+                  <label class="label-checkbox item-content" >
+                    <input id="replacement-cost-new" type="radio" name="estimated-radio" class="radio" data-bind="value:caEstimatedChecked" value="No"/>
+                    <div class="item-media">
+                      <i class="icon icon-form-checkbox"></i>
+                    </div>
+                    <div class="item-inner" style="border-bottom:none">
+                      <div class="item-title">REPLACEMENT COST NEW</div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div style="width:49%">
+              <div>&nbsp;</div>
+              <div>Source of Data Cost</div>
+              <div> 
+                <input type="text" id="source-of-data-cost" class="text-filled" data-bind="value:caSourceOfDataCost" placeholder="Source" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item-content">
+          <div class="item-inner">
+            <div style="width:49%">
+              <div>Quality Rating From Cost Service</div>
+              <div>
+                <input type="text" id="quality-rating-from-cost-service" class="text-filled" data-bind="value:caQualityRating" placeholder="Rating" />
+              </div>
+            </div>
+            <div style="width:49%">
+              <div>Effective Date of Cost Data</div>
+              <div>
+                <input type="Date" id="effective-date-of-cost-data" class="date" data-bind="value:caEffectiveDate" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="content-block">
+  <div class="list-block">
+    <div class="content-block-title">
+      <b>Opinion of Site Value</b>
+    </div>
+    <ul>
+      <li>
+        <div class="item-content">
+          <div class="item-inner" style="border:none">
+            <div>Section One</div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item-content">
+          <div class="item-inner">
+            <div style="width:32%">
+              <div>Area</div>
+              <div>
+                <input type="text" id="section-one-area" class="text-number" data-bind="value:caSectionOneArea" placeholder="sq. ft." />
+              </div>
+            </div>
+            <div style="width:32%">
+              <div>Price per Sq. Ft.</div>
+              <div>
+                <input type="text" id="section-one-price-per" class="text-number" data-bind="value:caSectionOnePricePer" placeholder="$$" />
+              </div>
+            </div>
+            <div style="width:32%">
+              <div>Total</div>
+              <div>
+                <input type="text" id="section-one-total" class="text-number" data-bind="value:caSectionOneTotal" placeholder="$$" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item-content">
+          <div class="item-inner" style="border:none">
+            <div>Section Two</div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item-content">
+          <div class="item-inner">
+            <div style="width:32%">
+              <div>Area</div>
+              <div>
+                <input type="text" id="section-two-area" class="text-number" data-bind="value:caSectionTwoArea" placeholder="sq. ft." />
+              </div>
+            </div>
+            <div style="width:32%">
+              <div>Price per Sq. Ft.</div>
+              <div>
+                <input type="text" id="section-two-price-per" class="text-number" data-bind="value:caSectionTwoPricePer" placeholder="$$" />
+              </div>
+            </div>
+            <div style="width:32%">
+              <div>Total</div>
+              <div>
+                <input type="text" id="section-two-total" class="text-number" data-bind="value:caSectionTwoTotal" placeholder="$$" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item-content">
+          <div class="item-inner" style="border:none">
+            <div>Section Three</div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item-content">
+          <div class="item-inner">
+            <div style="width:32%">
+              <div>Area</div>
+              <div>
+                <input type="text" id="section-three-area" class="text-number" data-bind="value:caSectionThreeArea" placeholder="sq. ft." />
+              </div>
+            </div>
+            <div style="width:32%">
+              <div>Price per Sq. Ft.</div>
+              <div>
+                <input type="text" id="section-three-price-per" class="text-number" data-bind="value:caSectionThreePricePer" placeholder="$$" />
+              </div>
+            </div>
+            <div style="width:32%">
+              <div>Total</div>
+              <div>
+                <input type="text" id="section-three-total" class="text-number" data-bind="value:caSectionThreeTotal" placeholder="$$" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item-content">
+          <div class="item-inner" style="border:none">
+            <div>Section Four</div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item-content">
+          <div class="item-inner">
+            <div style="width:32%">
+              <div>Area</div>
+              <div>
+                <input type="text" id="section-four-area" class="text-number" data-bind="value:caSectionFourArea" placeholder="sq. ft." />
+              </div>
+            </div>
+            <div style="width:32%">
+              <div>Price per Sq. Ft.</div>
+              <div>
+                <input type="text" id="section-four-price-per" class="text-number" data-bind="value:caSectionFourPricePer" placeholder="$$" />
+              </div>
+            </div>
+            <div style="width:32%">
+              <div>Total</div>
+              <div>
+                <input type="text" id="section-four-total" class="text-number" data-bind="value:caSectionFourTotal" placeholder="$$" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item-content">
+          <div class="item-inner">
+            <div style="width:32%">
+              <div>Sub-total</div>
+              <div>
+                <input type="text" id="cost-sub-total" class="text-number" data-bind="value:caSubtotal" placeholder="$$" />
+              </div>
+            </div>
+            <div style="width:32%">
+              <div>Cost Multiplier (if applicable)</div>
+              <div>
+                <input type="text" id="cost-cost-multiplier" class="text-number" data-bind="value:caCostMultiplier" placeholder="##" />
+              </div>
+            </div>
+            <div style="width:32%">
+              <div>Modified Sub-total</div>
+              <div>
+                <input type="text" id="cost-modified-sub-total" class="text-number" data-bind="value:caModifiedSubtotal" placeholder="$$" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item-content">
+          <div class="item-inner">
+            <div style="width:49%">
+              <div>
+                Physical Depreciation or Condition Modifier
+              </div>
+              <div>
+                <input type="text" id="physical-depreciation-modifier" class="text-filled" data-bind="value:caPhysDepModifier" placeholder="Modifier" />
+              </div>
+            </div>
+            <div style="width:49%">
+              <div>
+                Functional Obsolescence (not used for N.A.D.A.)
+              </div>
+              <div>
+                <input type="text" id="functional-obsolescence" class="text-filled" data-bind="value:caFunctionalObsolescence" placeholder="Modifier" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item-content">
+          <div class="item-inner">
+            <div style="width:49%">
+              <div>
+                External Depreciation or State Location Modifier
+              </div>
+              <div>
+                <input type="text" id="external-depreciation-modifier" class="text-filled" data-bind="value:caExternalDep" placeholder="Modifier" />
+              </div>
+            </div>
+            <div style="width:49%">
+              <div>
+                Delivery, Installation, and Setup (not used for N.A.D.A.)
+              </div>
+              <div>
+                <input type="text" id="delivery-installation-setup" class="text-number" data-bind="value:caDelivery" placeholder="$$" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item-content">
+          <div class="item-inner">
+            <div style="width:32%">
+              <div>&nbsp;</div>
+              <div>
+                Other Depreciated Site Improvements
+              </div>
+              <div>
+                <input type="text" id="other-depreciation-site-improvements" class="text-number" data-bind="value:caOtherDep" placeholder="$$" />
+              </div>
+            </div>
+            <div style="width:32%">
+              <div>
+                Market Value of Subject Site (as supported above)
+              </div>
+              <div>
+                <input type="text" id="market-value-of-subject-site" class="text-number" data-bind="value:caSubjectMarketValue" placeholder="$$" />
+              </div>
+            </div>
+            <div style="width:32%">
+              <div>&nbsp;</div>
+              <div>
+                Indicated Value by Cost Approach
+              </div>
+              <div>
+                <input type="text" id="indicated-value-by-cost-approach" class="text-number" data-bind="value:caIndicatedValue" placeholder="$$" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="content-block">
+  <div class="list-block">
+    <div class="content-block-title">
+      <b>Exterior Dimensions of the Subject Unit</b>
+    </div>
+    <ul>
+      <li>
+        <div class="item-content">
+          <div class="item-inner" style="border:none">
+            <div>Section One</div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item-content">
+          <div class="item-inner">
+            <div style="width:32%">
+              <div>Length</div>
+              <div>
+                <input type="text" id="section-one-length" class="text-number" data-bind="value:caSectionOneLength" placeholder="ft." />
+              </div>
+            </div>
+            <div style="width:32%">
+              <div>Width</div>
+              <div>
+                <input type="text" id="section-one-width" class="text-number" data-bind="value:caSectionOneWidth" placeholder="ft." />
+              </div>
+            </div>
+            <div style="width:32%">
+              <div>Total</div>
+              <div>
+                <input type="text" id="section-one-total-area" class="text-number" data-bind="value:caSectionOneTotalArea" placeholder="sq. ft." />
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item-content">
+          <div class="item-inner" style="border:none">
+            <div>Section Two</div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item-content">
+          <div class="item-inner">
+            <div style="width:32%">
+              <div>Length</div>
+              <div>
+                <input type="text" id="section-two-length" class="text-number" data-bind="value:caSectionTwoLength" placeholder="ft." />
+              </div>
+            </div>
+            <div style="width:32%">
+              <div>Width</div>
+              <div>
+                <input type="text" id="section-two-width" class="text-number" data-bind="value:caSectionTwoWidth" placeholder="ft." />
+              </div>
+            </div>
+            <div style="width:32%">
+              <div>Total</div>
+              <div>
+                <input type="text" id="section-two-total-area" class="text-number" data-bind="value:caSectionTwoTotalArea" placeholder="sq. ft." />
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item-content">
+          <div class="item-inner" style="border:none">
+            <div>Section Three</div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item-content">
+          <div class="item-inner">
+            <div style="width:32%">
+              <div>Length</div>
+              <div>
+                <input type="text" id="section-three-length" class="text-number" data-bind="value:caSectionThreeLength" placeholder="ft." />
+              </div>
+            </div>
+            <div style="width:32%">
+              <div>Width</div>
+              <div>
+                <input type="text" id="section-three-width" class="text-number" data-bind="value:caSectionThreeWidth" placeholder="ft." />
+              </div>
+            </div>
+            <div style="width:32%">
+              <div>Total</div>
+              <div>
+                <input type="text" id="section-three-total-area" class="text-number" data-bind="value:caSectionThreeTotalArea" placeholder="sq. ft." />
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item-content">
+          <div class="item-inner" style="border:none">
+            <div>Section Four</div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item-content">
+          <div class="item-inner">
+            <div style="width:32%">
+              <div>Length</div>
+              <div>
+                <input type="text" id="section-four-length" class="text-number" data-bind="value:caSectionFourLength" placeholder="ft." />
+              </div>
+            </div>
+            <div style="width:32%">
+              <div>Width</div>
+              <div>
+                <input type="text" id="section-four-width" class="text-number" data-bind="value:caSectionFourWidth" placeholder="ft." />
+              </div>
+            </div>
+            <div style="width:32%">
+              <div>Total</div>
+              <div>
+                <input type="text" id="section-four-total-area" class="text-number" data-bind="value:caSectionFourTotalArea" placeholder="sq. ft." />
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item-content">
+          <div class="item-inner">
+            <div style="width:49%">
+              <div>Total Gross Living Area</div>
+              <div>
+                <input type="text" id="total-gross-living-area" class="text-number" data-bind="value:caTotalGrossLivingArea" placeholder="sq. ft." />
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="content-block">
+  <div class="list-block">
+    <div class="content-block-title">
+      <b>Other Data Identification</b>
+    </div>
+    <ul>
+      <li>
+        <div class="item-content">
+          <div class="item-inner" style="border:none">
+            <div>N.A.D.A. Data Identification Info: Edition</div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item-content">
+          <div class="item-inner">
+            <div style="width:49%">
+              <div>Month</div>
+              <div>
+                <input type="text" id="nada-month" class="text-number" data-bind="value:caNadaMonth" placeholder="Month" />
+              </div>
+            </div>
+            <div style="width:49%">
+              <div>Year</div>
+              <div>
+                <input type="text" id="nada-year" class="text-number" data-bind="value:caNadaYear" placeholder="Year" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </li> 
+      <li>
+        <div class="item-content">
+          <div class="item-inner">
+            <div style="width:24%">
+              <div>MH State</div>
+              <div>
+                <input type="text" id="nada-mh-state" class="text-filled" data-bind="value:caNadaMhState" placeholder="MH State" />
+              </div>
+            </div>
+            <div style="width:24%">
+              <div>Region</div>
+              <div>
+                <input type="text" id="nada-region" class="text-filled" data-bind="value:caNadaRegion" placeholder="Region" />
+              </div>
+            </div>
+            <div style="width:24%">
+              <div>Length</div>
+              <div>
+                <input type="text" id="nada-size-length" class="text-filled" data-bind="value:caNadaLength" placeholder="ft." />
+              </div>
+            </div>
+            <div style="width:24%">
+              <div>Width</div>
+              <div>
+                <input type="text" id="nada-size-width" class="text-filled" data-bind="value:caNadaWidth" placeholder="ft." />
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item-content">
+          <div class="item-inner">
+            <div style="width:24%">
+              <div>Gray pg.</div>
+              <div>
+                <input type="text" id="gray-pg" class="text-filled" data-bind="value:caGrayPg" placeholder="Gray Pg." />
+              </div>
+            </div>
+            <div style="width:24%">
+              <div>White pg.</div>
+              <div>
+                <input type="text" id="white-pg" class="text-filled" data-bind="value:caWhitePg" placeholder="White Pg." />
+              </div>
+            </div>
+            <div style="width:24%">
+              <div>Black SVS pg.</div>
+              <div>
+                <input type="text" id="black-svs-pg" class="text-filled" data-bind="value:caBlackPg" placeholder="Black SVS Pg." />
+              </div>
+            </div>
+            <div style="width:24%">
+              <div>Yellow pg.</div>
+              <div>
+                <input type="text" id="yellow-pg" class="text-filled" data-bind="value:caYellowPg" placeholder="Yellow Pg." />
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item-content">
+          <div class="item-inner">
+            <div style="width:49%">
+              <div>15 years and older Conversion Chart pg.</div>
+              <div>
+                <input type="text" id="fifteen-years-page" class="text-filled" data-bind="value:caFifteenYearsPg" placeholder="15 years and older Conversion Chart Pg." />
+              </div>
+            </div>
+            <div style="width:49%">
+              <div>Estimated Remaining Economic Life (HUD and VA only) </div>
+              <div>
+                <input type="text" id="estimated-remaining-economic-life" class="text-number" data-bind="value:caEstimatedRemainingEconomicLife" placeholder="Years" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item-content">
+          <div class="item-inner">
+            <div style="width:100%">
+              <div>Comments</div>
+              <div>
+                <textarea id="other-data-identification-comments" class="text-filled" data-bind="value:caOtherComments" placeholder="Comments"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item-content">
+          <div class="item-inner">
+            <div style="width:100%">
+              <div>Summary of Cost Approach</div>
+              <div>
+                <textarea id="summary-of-cost-approach" class="text-filled" data-bind="value:caSummaryOfCa" placeholder="Summary of Cost Approach"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
